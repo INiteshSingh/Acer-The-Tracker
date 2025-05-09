@@ -1,0 +1,15 @@
+.features{
+    display: flex;
+    gap:5rem;
+    margin: 15px ;
+}
+.card{
+    padding: 10px;
+    
+}
+.featureHeading{
+    transform: 0.5s all ease ;
+    &:hover{
+        color:#0b5ed7;
+    }   
+}

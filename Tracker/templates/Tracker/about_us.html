@@ -1,0 +1,103 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'css.about_us.css%}' ">
+    <title>About Us</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ACER</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{%url 'home' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{%url 'about_us' %}">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <!-- Add Stuff Like this if You want to add more content in the nav bar <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- my Motivation -->
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="{%static 'image/aboutPage/my_motivation.jpg' %}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">The Motivation</h1>
+            <p class="lead">Me being a Aspiring Software Engineer also own a small Personal Business and Tracking and Managing the Purchases is a Very <b>Daunting</b> and a <b>Time Consuming</b> task.</p>
+            <p class="lead">In the Start My Business was easy to track and keep track of stuff like sales and stock purchase. But as my Business Grew I  <b>Started to Forget things like how much and from where i bought a particular item </b>for my Business</p>
+            <p class="lead">This Became <b>my initial Motivation</b> for Creating this tool and after that i wanted to <b>help other small business owners like myself out there</b>.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- divider between divs change the shade of the white other than default white so it appears good-->
+      <div class="b-example-divider"></div> 
+
+    <!-- my mission -->
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold">The Mission</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4"><b>In today’s world, money is one of the most important assets — but having control over your hard-earned money is an even more powerful</b>. My mission is to help you take charge of your finances by making expense tracking simple, clear, and empowering. Whether you're saving for a goal, cutting unnecessary costs, or just trying to understand where your money goes, this tool is designed to support you every step of the way. <b>Because when you have control over your money, you gain control over your future </b>.</p>
+    </div>
+    <div class="overflow-hidden" style="max-height: 30vh;">
+        <div class="container px-5">
+        <img src="{%static 'image/aboutPage/my_mission.jpg' %}" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+        </div>
+    </div>
+    </div>
+
+    <div class="b-example-divider"></div>
+
+    <!-- how it works -->
+    <div class="container col-xxl-8 px-4 py-5 mission">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="{%static 'image/aboutPage/how_it_works.jpg' %}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">How Acer Works?</h1>
+            <p class="lead">Track your daily expenses, categorize your spending, and view insightful summaries to make smarter financial decisions. Designed to be user-friendly and accessible, whether you’re just starting out or already budgeting like a pro.</p>
+            <p class="lead">You Can Track things as simple as <b>What did i buy ?, from where did i buy that thing ?, how much did that thing cost me ?</b> to things like <b>What % of money i spent on food, clothing, travel</b> etc.</p>
+            <p class="lead">Still Confused ? don't worry follow the tutorial on <a href="#" style="text-decoration: none; color: black;"><u>"How to Use Acer"</u></a> </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            </div>
+          </div>
+        </div>
+      </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
