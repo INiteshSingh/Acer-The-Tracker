@@ -1,0 +1,22 @@
+nav{
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+.heading-text{
+  margin: 20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.take-info{
+  margin:auto;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border:solid  1px;
+  max-width: 60%;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+.btn{
+  margin:auto;
+}
