@@ -55,7 +55,7 @@
 <div>
   <span class="display-6">Lets Track Your Monthly Expenses</span> <br>
   <p class="lead">Fill in the form below to get started.</p>
-  <form method="POST" action="/submit/">
+  <form method="POST" action="{% url 'submit_income' %}">
     {% csrf_token %}
     <div class="mb-3">
       <label for="name" class="form-label">Name</label>
