@@ -42,14 +42,9 @@ def submit_user_data(request):
         return HttpResponse("Invalid request method")
 
 def dashboard(request):
-    name = request.session.get('name')
-    email = request.session.get('email')
-    income = request.session.get('income')
-
     context = {
-        'name': name,
-        'email': email,
-        'income': income
+        'name': request.session.get('name'),
+        'email': request.session.get('email'),
+        'income': request.session.get('income'),
     }
-
     return render(request, 'Tracker/dashboard.html', context)
