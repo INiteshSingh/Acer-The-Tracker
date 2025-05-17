@@ -7,6 +7,6 @@ urlpatterns = [
     path("for_individual",views.for_individual,name="for_individual"),
     path("for_business",views.for_business,name="for_business"),
     path("about_us",views.about_us,name="about_us"),
-    path("submit-user-data",views.submit_user_data,name="submit_user_data"),
+    path("submit/",views.submit_data,name="submit_data"),
     path('dashboard/', views.dashboard, name='dashboard')
 ]

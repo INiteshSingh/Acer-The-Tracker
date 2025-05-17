@@ -22,9 +22,8 @@ def about_us(request):
     return render(request, "Tracker/about_us.html")
 
 
-def submit_user_data(request):
+def submit_data(request):
     if request.method == 'POST':
-        print("POST data: ", request.POST)
         name = request.POST.get('name')
         email = request.POST.get('email')
         income = request.POST.get('income')  # Use get() to avoid MultiValueDictKeyError
@@ -32,14 +31,13 @@ def submit_user_data(request):
         if not income:
             return HttpResponse("Income not provided")
 
-        # Save to session or database
-        request.session['name'] = name
-        request.session['email'] = email
-        request.session['income'] = income
+        # # Save to session or database
+        # request.session['name'] = name
+        # request.session['email'] = email
+        # request.session['income'] = income
 
-        return redirect('dashboard')
-    else:
-        return HttpResponse("Invalid request method")
+        return render(request, 'Tracker/dashboard.html', {'name': name, 'email': email, 'income': income})
+    return redirect("for_individual")
 
 def dashboard(request):
     context = {
