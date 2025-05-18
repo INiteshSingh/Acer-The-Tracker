@@ -1,0 +1,26 @@
+.navbar{
+    box-shadow: 10px 5px 5px #EFEEEA;
+}
+.add-expenses {
+margin-top: 10vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+padding:10px;
+}
+form>div{
+    margin-bottom: 1rem;
+}
+.but{
+    margin-left: 30px;
+}
+.display-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a{
+    text-decoration: none;
+}
