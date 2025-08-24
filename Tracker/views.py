@@ -1,6 +1,5 @@
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
-import matplotlib.pyplot as plt
 import io, base64
 # Home page
 def home(request):
